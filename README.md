@@ -1,12 +1,14 @@
 # ImageNet-Finetuning-for-Caltech-101
 
 ## 项目结构
+```
 ├── ImageNet.py # 主模型（预训练微调）训练脚本
 ├── train_from_scratch.py # 从零开始训练模型脚本
 ├── tune_hyperparams.py # 超参数调优脚本
 ├── utils.py # 工具函数集合（数据加载、模型构建、训练验证等）
 ├── runs/ # Tensorboard 日志目录（运行训练脚本后生成）
-├── 训练过程可视化/ # 实验结果（Tensorboard截图）
+└── 训练过程可视化/ # 实验结果（Tensorboard截图）
+```
 
 ## 训练和测试
 
@@ -57,6 +59,3 @@ tensorboard --logdir runs
 *   `resnet18_caltech101_scratch.pth`: 从零开始训练模型权重
 *   `best_param_model.pth`: 超参数调优后的最佳模型权重
 
-## 实验报告
-
-实验报告包括对模型、数据集、实验结果的介绍，以及结合 Tensorboard 可视化的分析。
